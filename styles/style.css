@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    background: none;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    border: none;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1250px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: #00240F;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.nav {
+    width: 100%;
+    max-width: 203px;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.active {
+    color: #ec0000;
+}
+
+.icons {
+    margin-left: 36px;
+    width: 100%;
+    max-width: 68px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.search-icon {
+    background-image: url(/assets/img/search.png);
+}
+
+.cart-icon {
+    background-image: url(/assets/img/cart.png);
+}
+
+.sign-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button {
+    padding: 10px 24px 11px;
+    background: #EC0000;
+    border-radius: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main {
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    /* background: linear-gradient(270deg, #FFFFFF 24.6%, rgba(255, 255, 255, 0.94) 37.11%, rgba(255, 255, 255, 0.9) 46.89%, rgba(255, 255, 255, 0) 82.49%); */
+    mix-blend-mode: normal;
+    background: linear-gradient(90deg, #FFFFFF 45.6%, rgba(255, 255, 255, 0.94) 50.11%, rgba(255, 255, 255, 0.9) 50.89%, rgba(255, 255, 255, 0) 76.49%), url(/assets/img/pizza.jpg);
+}
+
+.main .button {
+    box-shadow: -10px 20px 40px rgba(236, 0, 0, 0.16);
+}
+
+.main .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 549px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 74px;
+    margin-bottom: 4px;
+}
+
+.sub-heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 58px;
+    margin-bottom: 36px;
+}
+
+.menu .wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 74px;
+    text-align: center;
+    color: #00240F;
+}
+
+.pizza-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 1030px;
+    justify-content: space-between;
+    /* gap: 40px; */
+}
+
+.pizza-item {
+    width: 100%;
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    align-items: center;
+    border: 1px solid #BDBDBD;
+    border-radius: 180px 180px 30px 30px;
+}
+
+.pizza-img {
+    border-radius: 50%;
+    margin-bottom: 21px;
+    filter: drop-shadow(-10px 20px 40px rgba(0, 0, 0, 0.16));
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 21px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #05A84B;
+    margin-bottom: 21px;
+}
+
+.menu .button {
+    box-shadow: -10px 20px 40px rgba(236, 0, 0, 0.16);
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* parent */
+.select-menu {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #4f4f4f4f;
+    border-radius: 25px;
+    text-indent: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+    appearance: none;
+    position: relative;
+}
+
+/* child1 */
+.select-menu::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(/assets/img/appearance.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
